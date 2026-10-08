@@ -4,20 +4,85 @@ import pandas as pd
 import yfinance as yf
 
 # ==========================================
-# 1. KONFIGURATION
+# 1. KONFIGURATION (Alle 70 Aktien integriert)
 # ==========================================
 TELEGRAM_TOKEN = "8698312950:AAEgdICs_IYu_P_xRmldQq6Bdj-7A0twhRM"
 TELEGRAM_CHAT_ID = "8800187045"
 
 AKTIEN_LISTE = {
+    # 🇩🇪 DAX 40
+    "ADS.DE": "Adidas",
+    "AIR.DE": "Airbus",
+    "ALV.DE": "Allianz",
+    "BAS.DE": "BASF",
+    "BAYN.DE": "Bayer",
+    "BMW.DE": "BMW",
+    "CON.DE": "Continental",
+    "1COV.DE": "Covestro",
+    "DTG.DE": "Daimler Truck",
+    "DB1.DE": "Deutsche Börse",
+    "DBK.DE": "Deutsche Bank",
+    "LHA.DE": "Deutsche Lufthansa",
+    "DPW.DE": "DHL Group",
+    "DTE.DE": "Deutsche Telekom",
+    "EON.DE": "E.ON",
+    "FRE.DE": "Fresenius",
+    "HEI.DE": "Heidelberg Materials",
+    "HEN3.DE": "Henkel",
+    "IFX.DE": "Infineon",
+    "MBG.DE": "Mercedes-Benz Group",
+    "MRK.DE": "Merck",
+    "MTX.DE": "MTU Aero Engines",
+    "MUV2.DE": "Münchener Rück",
+    "PUM.DE": "Puma",
+    "RHM.DE": "Rheinmetall",
+    "RWE.DE": "RWE",
     "SAP.DE": "SAP",
     "SIE.DE": "Siemens",
-    "ALV.DE": "Allianz",
-    "DTE.DE": "Deutsche Telekom",
+    "ENR.DE": "Siemens Energy",
+    "SHL.DE": "Siemens Healthineers",
+    "SRT3.DE": "Sartorius",
+    "SY1.DE": "Symrise",
+    "VOW3.DE": "Volkswagen",
+    "VNA.DE": "Vonovia",
+    "ZAL.DE": "Zalando",
+    "CBK.DE": "Commerzbank",
+    "HNR1.DE": "Hannover Rück",
+    "PAH3.DE": "Porsche SE",
+    "P911.DE": "Porsche AG",
+    "RRE.DE": "Rheinmetall (Zweitlistung)",
+
+    # 🇺🇸 Dow Jones 30
     "AAPL": "Apple",
-    "MSFT": "Microsoft",
+    "AMGN": "Amgen",
     "AMZN": "Amazon",
+    "AXP": "American Express",
+    "BA": "Boeing",
+    "CAT": "Caterpillar",
+    "CRM": "Salesforce",
+    "CSCO": "Cisco Systems",
+    "CVX": "Chevron",
+    "DIS": "Walt Disney",
+    "GS": "Goldman Sachs",
+    "HD": "Home Depot",
+    "HON": "Honeywell",
+    "IBM": "IBM",
+    "INTC": "Intel",
+    "JNJ": "Johnson & Johnson",
+    "JPM": "JPMorgan Chase",
     "KO": "Coca-Cola",
+    "MCD": "McDonald's",
+    "MMM": "3M",
+    "MRK": "Merck & Co.",
+    "MSFT": "Microsoft",
+    "NKE": "Nike",
+    "NVDA": "Nvidia",
+    "PG": "Procter & Gamble",
+    "TRV": "The Travelers Companies",
+    "UNH": "UnitedHealth Group",
+    "VZ": "Verizon",
+    "WMT": "Walmart",
+    "V": "Visa"
 }
 
 # ==========================================
